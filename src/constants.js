@@ -149,18 +149,11 @@ export const serviceData = [
 
 export const projectStack = [
   {
-    title: "Portfolio Website",
-    image: process.env.PUBLIC_URL + "/assets/projects/portfolio-website.png",
-    description:
-      "Showcase your skills and achievements with a sleek and professional portfolio website. Highlight your best work, share your story, and connect with potential clients or employers. Perfect for creatives, professionals, and job seekers looking to make a lasting impression.",
-    sourceCode: "https://github.com/Sathish0225/portfolio-website",
-    link: "hello",
-  },
-  {
     title: "Todo List App",
     image: process.env.PUBLIC_URL + "/assets/projects/todo-list-app.png",
     description:
       "Stay organized and boost your productivity with our intuitive to-do list app. Effortlessly manage tasks, set deadlines, and prioritize your work to achieve your goals efficiently. Whether for personal use or team collaboration, our app simplifies task management for everyone.",
+    technologies: "HTML, CSS,NodeJS, ReactJS",
     sourceCode: "https://github.com/Sathish0225/todo-list-app",
     link: "https://todo-list-app-three-theta.vercel.app/",
   },
@@ -169,7 +162,17 @@ export const projectStack = [
     image: process.env.PUBLIC_URL + "/assets/projects/sudoku-solver.png",
     description:
       "Ever solved a sudoku puzzle. It's tricky right? Don't worry! With this app you can get any valid sudoku puzzle solved within seconds. Just enter the sudoku config and hit submit.",
+    technologies: "ReactJs",
     sourceCode: "https://github.com/Sathish0225/sudoku-solver",
     link: "https://sudoku-solver-gilt-eight.vercel.app/",
+  },
+  {
+    title: "Portfolio Website",
+    image: process.env.PUBLIC_URL + "/assets/projects/portfolio-website.png",
+    description:
+      "Showcase your skills and achievements with a sleek and professional portfolio website. Highlight your best work, share your story, and connect with potential clients or employers. Perfect for creatives, professionals, and job seekers looking to make a lasting impression.",
+    technologies: "HTML, TailwindCSS, ReactJs,",
+    sourceCode: "https://github.com/Sathish0225/portfolio-website",
+    link: "/",
   },
 ];

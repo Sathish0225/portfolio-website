@@ -21,10 +21,8 @@ function Contact() {
           <h4 className="mt-12 text-3xl font-semibold text-blue-500">
             Connect with me
           </h4>
-          <p className={darkMode ?"text-gray-500 text-xl" :"text-gray-200 text-xl"}>
-            If you want to know more about me or my work, or if you would just
-            <br />
-            like to say hello, send me a message. I'd love to hear from you.
+          <p className={darkMode ? "text-gray-500 text-xl" : "text-gray-200 text-xl"}>
+            Feel free to reach out if you want a to build something together, <br />have a question, or just want to connect.
           </p>
         </div>
         <div className="flex justify-between items-center md:items-stretch  flex-col md:flex-row pb-24">
@@ -44,7 +42,7 @@ function Contact() {
                 <input
                   type="email"
                   id="name"
-                  className={darkMode ? "bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" :"bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-200 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"}
+                  className={darkMode ? "bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" : "bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-200 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"}
                   placeholder="Enter your name"
                   required
                 />
@@ -63,7 +61,7 @@ function Contact() {
                 <input
                   type="email"
                   id="email"
-                  className={darkMode ? "bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" :"bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-200 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"}
+                  className={darkMode ? "bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" : "bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-200 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"}
                   placeholder="Enter your email"
                   required
                 />
@@ -81,7 +79,7 @@ function Contact() {
                 </label>
                 <textarea
                   id="message"
-                  className={darkMode ? "bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" :"bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-200 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"}
+                  className={darkMode ? "bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" : "bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-200 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"}
                   placeholder="Enter your message"
                   required
                 />
@@ -124,7 +122,7 @@ function Contact() {
             </a>
             <h1 className="text-3xl  font-bold">Social</h1>
             <ul className="flex">
-              {contactLinks.map((el,index) => (
+              {contactLinks.map((el, index) => (
                 <a key={index}
                   href={el.link}
                   className="md:ml-6 md:mr-0 mr-6 cursor-pointer mt-4 hover:scale-125 flex flex-col justify-center items-center"
@@ -140,13 +138,11 @@ function Contact() {
       <div
         className={
           darkMode
-            ? "w-full bg-white text-black text-lg py-3 flex justify-center"
-            : "w-full bg-gray-900 text-white text-lg py-3 flex justify-center"
+            ? "w-full bg-white text-black text-sm py-3 flex justify-center"
+            : "w-full bg-gray-900 text-white text-sm py-3 flex justify-center"
         }
       >
-        Made with
-        <div className="text-red-500 px-2 text-2xl">&#10084;</div>
-        by Sathishkumar Ranganathan
+        <p>&copy; 2024 <b><a href="/"> Portfolio</a></b> Designed by <b><a href="/" target='_blank'>Sathishkumar Ranganathan</a></b></p>
       </div>
     </div>
   );
